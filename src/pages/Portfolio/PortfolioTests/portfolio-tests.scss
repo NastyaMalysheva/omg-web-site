@@ -1,0 +1,105 @@
+.tests-wrapper {
+  padding-top: 109px;
+  .first-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #E5E5E5;
+    .block-clock {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 100px;
+      width: 1200px;
+      .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+          margin-top: 22px;
+          text-align: center;
+          font-family: Alata;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 36px;
+          line-height: 50px;
+        }
+
+        img {
+          height: 475px;
+          width: 662px;
+        }
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 60px;
+        .google {
+          margin-bottom: 18px;
+          height: 45px;
+        }
+        .store {
+          height: 45px;
+        }
+      }
+    }
+
+    .text-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+      margin-top: 25px;
+      font-family: Alata;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 35px;
+
+      h1{
+        margin-bottom: 30px;
+        font-family: Alata;
+        font-size: 30px;
+        line-height: 41px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .second-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E4EAFF;
+    img {
+      margin-right: 25px;
+      height: 370px;
+    }
+
+    .text {
+      margin-top: 130px;
+      margin-bottom: 212px;
+      font-family: Alata;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      .title {
+        font-family: Alata;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 50px;
+      }
+
+      p {
+        margin-top: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.portfolio-cm-wrapper {
+  padding-top: 109px;
+  .cm-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 590px;
+    background: #E4EAFF;
+    .title {
+      font-family: Alata;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 50px;
+    }
+
+    .img-block {
+      display: flex;
+      .cmup {
+        margin-top: 50px;
+        margin-right: 20px;
+        height: 400px;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 320px;
+        .google {
+          margin-bottom: 18px;
+          height: 45px;
+        }
+
+        .store {
+          height: 45px;
+        }
+      }
+
+      .cmadmin {
+        margin-top: 80px;
+        margin-left: 48px;
+        height: 340px;
+      }
+    }
+  }
+
+  .text-block {
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #E5E5E5;
+
+    .text {
+      margin-top: 30px;
+      font-family: Alata;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+
+      h1 {
+        margin-bottom: 30px;
+        font-family: Alata;
+        font-size: 30px;
+        line-height: 41px;
+        font-weight: normal;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: 30px;
+    font-family: Alata;
+    font-size: 30px;
+    line-height: 41px;
+    font-weight: normal;
+  }
+
+  .coffee-mobile-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 708px;
+
+    img {
+      margin-right: 25px;
+      height: 473px;
+    }
+
+    .text {
+      font-family: Alata;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .admin-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E5E5E5;
+    .text {
+      margin-right: 70px;
+      font-family: Alata;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    img {
+      margin-top: 60px;
+      margin-bottom: 100px;
+      height: 350px;
+    }
+  }
+}

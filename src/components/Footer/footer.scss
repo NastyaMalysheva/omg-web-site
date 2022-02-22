@@ -1,0 +1,50 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  .languages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    width: 90px;
+    height: 75px;
+    background: #F0F0F0;
+    border-radius: 15px;
+    border: none;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    font-family: Alata;
+
+    img {
+      margin-left: 20px;
+    }
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    img {
+      height: 55px;
+      width: 55px;
+    }
+
+    .telegram {
+      margin-left: 25px;
+    }
+
+    .speak {
+      margin-right: 20px;
+      margin-left: 100px;
+      height: 87px;
+      width: 87px;
+      border-radius: 50%;
+      background: #8FA1FF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

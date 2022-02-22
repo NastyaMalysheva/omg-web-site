@@ -1,0 +1,103 @@
+.portfolio-kavapp-wrapper {
+  padding-top: 109px ;
+  .kavapp-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #E5E5E5;
+    .title {
+      margin-top: 22px;
+      margin-bottom: 65px;
+      font-family: Alata;
+      font-size: 36px;
+      line-height: 50px;
+    }
+
+    img {
+      margin-bottom: 65px;
+      width: 770px;
+      height: 390px;
+    }
+
+    .text-block {
+      h1 {
+        margin-bottom: 25px;
+      }
+
+      .text {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .kavapp-seller-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 708px;
+    background: #E4EAFF;
+
+    img {
+      margin-right: 90px;
+      height: 430px;
+    }
+  }
+
+  .kavapp-delivery-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 708px;
+    background: #FFFFFF;
+
+    img {
+      width: 665px;
+      margin-left: 10px;
+    }
+  }
+
+  .kavapp-admin-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 708px;
+    background: #E5E5E5;
+
+    img {
+      margin-right: 40px;
+      height: 400px;
+    }
+  }
+
+  h1 {
+    margin-top: 35px;
+    font-family: Alata;
+    font-size: 30px;
+    line-height: 41px;
+    font-weight: normal;
+  }
+
+
+
+  .text {
+    font-family: Alata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    .title-text {
+      font-size: 24px;
+      line-height: 33px;
+    }
+
+    p {
+      margin-top: 14px;
+    }
+  }
+
+  .text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

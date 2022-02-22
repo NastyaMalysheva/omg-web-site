@@ -1,0 +1,354 @@
+
+.title-wrapper {
+  width: 100vw;
+  height: 1100px;
+  background: #E5E5E5;
+  padding-top: 100px;
+
+  .left-block {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      margin-top: 110px;
+      font-family: Alata;
+      width: 643px;
+      height: 147px;
+      left: -23px;
+      top: 218px;
+      font-size: 48px;
+      line-height: 66px;
+      text-align: center;
+
+       p {
+        margin-left: 370px;
+        margin-top: 10px;
+      }
+    }
+
+    .lets-talk {
+      margin-top: 92px;
+      margin-left: 110px;
+    }
+
+    .dandelion {
+      height: 350px;
+      width: 500px;
+    }
+
+    .line {
+      margin-top: 160px;
+      width: 100vw;
+      height: 219.41px;
+    }
+  }
+  .service-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 55px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: center;
+    font-family: Cooper;
+  }
+}
+
+.service-wrapper {
+  height: 460px;
+  padding-top: 40px;
+  .mobile {
+    .mobile-title  {
+      height: 41px;
+      font-family: Alata;
+      font-size: 30px;
+      line-height: 41px;
+      text-align: center;
+    }
+
+    .block {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: Alata;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 28px;
+
+      .text {
+        p {
+          margin-bottom: 20px;
+        }
+      }
+
+      img {
+        width: 364px;
+        height: 347px;
+      }
+    }
+  }
+}
+
+.web-wrapper {
+  height: 460px;
+  background: #E5E5E5;
+  padding-top: 40px;
+  .web {
+    .web-title {
+      height: 41px;
+      font-family: Alata;
+      font-size: 30px;
+      line-height: 41px;
+      text-align: center;
+    }
+
+    .block {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: Alata;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 28px;
+
+      img {
+        width: 364px;
+        height: 347px;
+        background: none;
+      }
+
+      .text {
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.design-wrapper {
+  padding-top: 40px;
+  background: #E4EAFF;
+  height: 460px;
+  .design {
+    .design-title {
+      height: 41px;
+      font-family: Alata;
+      font-size: 30px;
+      line-height: 41px;
+      text-align: center;
+    }
+
+    .block {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: Alata;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 28px;
+
+      img {
+        width: 364px;
+        height: 347px;
+        background: none;
+      }
+
+      .text {
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.portfolio {
+  height: 180px;
+  background: #E5E5E5;
+  padding-top: 70px;
+  .portfolio-title {
+    text-align: center;
+    font-family: Cooper;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 55px;
+    color: #000000;
+  }
+}
+
+.portfolio-block {
+  display: flex;
+  justify-content: space-around;
+  img {
+    width: 921px;
+    height: 651px;
+  }
+  .right-block {
+    display: flex;
+    flex-direction: column;
+    img {
+      margin-left: 40%;
+      margin-top: 45px;
+      width: 60px;
+      height: 60px;
+    }
+    .text {
+      margin-top: 30px;
+      font-family: Alata;
+      font-size: 32px;
+      line-height: 44px;
+      text-align: center;
+      color: #8FA1FF;
+    }
+    .view {
+      margin-top: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: none;
+      cursor: pointer;
+      p {
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        font-family: Alata;
+      }
+      img {
+        width: 25px;
+        height: 18px;
+        margin-left: 22px;
+        margin-top: 0;
+      }
+    }
+  }
+}
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #E5E5E5;
+  padding-bottom: 60px;
+  .contact-us-title-block {
+    width: 100vw;
+    height: 180px;
+    padding-top: 70px;
+
+    .contact-us-title {
+      text-align: center;
+      font-family: Cooper;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 55px;
+      color: #000000;
+    }
+  }
+
+  .contact-us-block {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 1280px;
+    background: #E4EAFF;
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    padding-top: 30px;
+
+    input {
+      height: 40px;
+      margin-top: 45px;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      background: none;
+      border-bottom: 2px black solid;
+      padding-bottom: 10px;
+      padding-left: 8px;
+    }
+
+    input::placeholder {
+      font-family: Alata;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    input:focus {
+      border: none;
+    }
+
+    .text {
+      width: 590px;
+    }
+
+    .inputs {
+      display: flex;
+
+      .left-inputs {
+        display: flex;
+        flex-direction: column;
+        input {
+          width: 230px;
+        }
+      }
+
+      .right-inputs {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          width: 280px;
+          margin-left: 90px;
+        }
+      }
+    }
+  }
+
+  .lets-talk {
+    margin-top: 60px;
+  }
+
+  p {
+    margin: 30px;
+    font-size: 24px;
+    line-height: 33px;
+    font-family: Alata;
+  }
+
+  .message {
+    display: flex;
+    .telegram {
+      margin-left: 100px;
+    }
+
+    img {
+      height: 55px;
+      width: 55px;
+    }
+  }
+
+}
+
+.lets-talk {
+  width: 326px;
+  height: 64px;
+  background: #8FA1FF;
+  box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+  border-radius: 10px;
+  border: none;
+  font-family: Cooper;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 34px;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
