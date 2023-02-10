@@ -1,0 +1,23 @@
+{
+  "development": "Development",
+  "app": "Web and Mobile App",
+  "talk": "Let`s talk",
+  "service": "Service",
+  "mobile": "Mobile",
+  "web": "WEB",
+  "design": "Design",
+  "portfolio": "Portfolio",
+  "portfolio_block_text": "We build state of the art apps that delight both clients and users.",
+  "View_work": "View our work",
+  "contact_us": "Contact us",
+  "contacts": "Contacts",
+  "phone_number": "Phone number",
+  "name": "Name",
+  "email": "Email",
+  "country": "Country",
+  "or": "or",
+  "tell_us_about_idea": "Tell us  about you idea  or project",
+  "home": "Home",
+  "pop_up_text" : "Thank you! We will contact you shortly!",
+  "send": "send"
+}

@@ -1,16 +1,19 @@
-import './App.scss';
+import React from "react";
 import Header from "./components/Header/Header";
 import RenderRoute from "./routes/routes";
-import Footer from "./components/Footer/Footer";
+import {BrowserRouter} from "react-router-dom";
+
+import './App.css';
 
 function App() {
     return (
         <div className="App">
-            <Header/>
+            <BrowserRouter>
+                <Header/>
                 <div className="container">
                     <RenderRoute/>
                 </div>
-            <Footer/>
+            </BrowserRouter>
         </div>
     );
 }

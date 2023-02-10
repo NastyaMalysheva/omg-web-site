@@ -1,7 +1,9 @@
+import React from "react";
 import kavapp from "../../assets/img/kavapp.png"
 import cm from "../../assets/img/сm.png"
 import tests from "../../assets/img/tests.png"
 import "./portfolio.scss"
+import {NavLink} from "react-router-dom";
 
 function Portfolio() {
     return (
@@ -27,7 +29,7 @@ function Portfolio() {
                         - Warehouse and delivery (Delivery) - for the logistician.
                     </span>
                     </div>
-                    <button className="view">View the project</button>
+                    <NavLink to="/portfolioKavapp" className="view">View the project</NavLink>
                 </div>
                 <img src={kavapp} alt="kavapp"/>
             </div>
@@ -53,7 +55,7 @@ function Portfolio() {
                             interface and extensive functionality.
                     </span>
                     </div>
-                    <button className="view">View the project</button>
+                    <NavLink to="/portfolioCm" className="view">View the project</NavLink>
                 </div>
             </div>
             <div className="tests-wrapper">
@@ -72,7 +74,7 @@ function Portfolio() {
                             government agencies.
                          </span>
                     </div>
-                    <button className="view">View the project</button>
+                    <NavLink to="/portfolioTests" className="view">View the project</NavLink>
                 </div>
                 <img src={tests} alt="tests"/>
             </div>

@@ -1,126 +1,102 @@
-
-import mobile from "../../assets/img/mobile.png";
-import web from "../../assets/img/web.png";
-import design from "../../assets/img/design.png";
-import line from "../../assets/img/line.png";
+import React, {useState} from "react";
+import Slider from "../../components/Slider/Slider";
 import portfolio from "../../assets/img/portfolio.png";
-import one from "../../assets/img/one.png";
 import arrow from "../../assets/img/arrow.png";
-import telegram from "../../assets/img/telegram.svg";
-import envelope from "../../assets/img/envelope.png";
-import dandelion from "../../assets/img/dandelion.png";
+import {NavLink} from "react-router-dom";
+import {useTranslation} from "react-i18next";
+import "../../i18n"
 
 import "./home.scss"
 
 
 function Home() {
+    const [showPopUp, setShowPopUp] = useState(false)
+    const {t, i18n} = useTranslation();
+    const $form = document.getElementById('contact-us');
+
+    const scrollToBlock = () => {
+        return (
+            $form.scrollIntoView({
+                block: 'nearest',
+                behavior: 'smooth',
+            })
+        )
+    }
+
+    const closePopUp = () => {
+        return (
+            setTimeout(() => {
+                setShowPopUp(false)
+            }, 6000)
+        )
+    }
+
+    const openPopup = () => {
+        const inputValue = document.getElementsByTagName("input")
+        for (let i = 0;  i < inputValue.length; i++) {
+            inputValue[i].value = '';
+        }
+        return (
+            setShowPopUp(true),
+            closePopUp()
+        )
+    }
+
     return (
         <div>
-            <div className="title-wrapper">
-                <div className="left-block">
-
-               <span className="title">Web and Mobile App <br/>
-                   <p>Development</p>
-               </span>
-                    <button className="lets-talk">Let`s talk</button>
-                    {/*<img className="dandelion" src={dandelion} alt="dandelion"/>*/}
-                    <img className="line" src={line} alt="line"/>
-                </div>
-                <div className="service-title">Service</div>
-            </div>
-            <div className="service-wrapper">
-                <div className="mobile">
-                    <div className="mobile-title">Mobile</div>
-                    <div className="block">
-                          <span className="text">
-                           <p>Mobile apps for iOS and Android are designed to help you quickly and <br/>
-                            efficiently prepare for certification or admission to government agencies.<br/></p>
-                            Mobile apps for iOS and Android are designed to help you quickly and <br/>
-                            efficiently prepare for certification or admission to government agencies.<br/>
-                            Mobile apps for iOS and Android are designed to help you quickly and <br/>
-                            efficiently prepare for certification or admission to government agencies.
-                          </span>
-                        <img src={mobile} alt="mobile"/>
+            <div className="home-wrapper">
+                <div className="title-wrapper">
+                    <div className="left-block">
+                   <span className="title">{t('app')}<br/>
+                       <p>{t('development')}</p>
+                   </span>
+                        <button onClick={scrollToBlock} className="lets-talk">{t('talk')}</button>
                     </div>
                 </div>
-            </div>
-            <div className="web-wrapper">
-                <div className="web">
-                    <div className="web-title">WEB</div>
-                    <div className="block">
-                        <img src={web} alt="web"/>
-                        <span className="text">
-                            <p>
-                             Mobile apps for iOS and Android are designed to help you quickly and <br/>
-                            efficiently prepare for certification or admission to government agencies.<br/>
-                            </p>
-                            Mobile apps for iOS and Android are designed to help you quickly and <br/>
-                            efficiently prepare for certification or admission to government agencies.<br/>
-                            Mobile apps for iOS and Android are designed to help you quickly and <br/>
-                            efficiently prepare for certification or admission to government agencies.
-                          </span>
-                    </div>
+                <div className="service">
+                    <div className="service-title"><span className="text">{t('service')}</span></div>
+                    <Slider/>
                 </div>
-            </div>
-            <div className="design-wrapper">
-                <div className="design">
-                    <div className="design-title">Design</div>
-                    <div className="block">
-                          <span className="text">
-                            <p>Mobile apps for iOS and Android are designed to help you quickly and <br/>
-                            efficiently prepare for certification or admission to government agencies.<br/></p>
-                            Mobile apps for iOS and Android are designed to help you quickly and <br/>
-                            efficiently prepare for certification or admission to government agencies.<br/>
-                            Mobile apps for iOS and Android are designed to help you quickly and <br/>
-                            efficiently prepare for certification or admission to government agencies.
-                          </span>
-                        <img src={design} alt="design"/>
+                <div className="portfolio-block">
+                    <div className="portfolio-title">
+                        <div className="title">{t("portfolio")}</div>
                     </div>
-                </div>
-            </div>
-            <div className="portfolio">
-                <div className="portfolio-title">Portfolio</div>
-            </div>
-            <div className="portfolio-block">
-                <img src={portfolio} alt="portfolio"/>
-                <div className="right-block">
-                    <img src={one} alt="one"/>
                     <span className="text">
-                        We build state of the <br/>
-                        art apps that delight<br/>
-                        both clients and<br/> users
-                    </span>
-                    <button className="view"><p>View our work</p> <img src={arrow} alt="arrow"/> </button>
+                    {t("portfolio_block_text")}
+                </span>
+                    <NavLink to="/portfolio" className="view">
+                        <p>{t('View_work')}</p>
+                        <img src={arrow} alt="arrow"/>
+                    </NavLink>
                 </div>
-            </div>
-            <div className="contact-us">
-                <div className="contact-us-title-block">
-                    <div className="contact-us-title">Contact us</div>
-                </div>
-                <div className="contact-us-block">
-                    <div className="inputs">
-                        <div className="left-inputs">
-                            <input placeholder="Name"/>
-                            <input placeholder="Phone number"/>
+                <div id="contact-us" className="contact-us">
+                    <div className="contact-us-block">
+                        <div className="contact-us-title">{t("contact_us")}</div>
+                        <div className="inputs">
+                            <div className="left-inputs">
+                                <input placeholder={t("name")}/>
+                                <input placeholder={t("phone_number")}/>
+                            </div>
+                            <div className="right-inputs">
+                                <input placeholder={t("email")}/>
+                                <input placeholder={t("country")}/>
+                            </div>
                         </div>
-                        <div className="right-inputs">
-                            <input placeholder="Email"/>
-                            <input placeholder="Country"/>
-                        </div>
+                        <input className="text" placeholder={t("tell_us_about_idea")}/>
+                        <button onClick={openPopup} className="lets-talk">{t("send")}</button>
                     </div>
-
-                    <input className="text" placeholder="Tell us  about you idea  or project"/>
-                    <button className="lets-talk">Let`s talk</button>
-                    <p>or</p>
-                   <div className="message">
-                       <img src={envelope} alt="envelope"/>
-                       <img className="telegram" src={telegram} alt="telegram"/>
-                   </div>
                 </div>
+                {showPopUp ?
+                    (<div onClick={() => setShowPopUp(false)} className="pop-up-container">
+                        <div className="pop-up-body">
+                            <p>{t("pop_up_text")}</p>
+                        </div>
+                    </div>)
+                    : null}
             </div>
-
         </div>
     )
 }
 
 export default Home
+
